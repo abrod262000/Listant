@@ -1,0 +1,238 @@
+
+<html lang="en" ng-app="listant">
+<head>
+
+  <!-- META DATA -->
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta charset="UTF-8">
+  <title>Listant | Community Driven:</title>
+  <meta name="description" content="Listant is a real-time, local listing agent that provides the most efficient, responsive, and safe platform for the everyday exchanges of goods and services."/>
+  <meta name="keywords" content="Listant is a real-time, local listing agent that provides the most efficient, responsive, and safe platform for the everyday exchanges of goods and services.."/>
+  <meta name="author" content="Listant, LLC"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta property="og:image" content="http://bellwethermade.com/small_facebook.png" />
+  <meta property="og:title" content="Listant | Community Driven:" />
+  <meta property="og:description" content="Listant is a real-time, local listing agent that provides the most efficient, responsive, and safe platform for the everyday exchanges of goods and services." />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- WEB FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+  <!-- STYLESHEETS -->
+  <link href="public/css/font-awesome.min.css" rel="stylesheet">
+  <link href='public/css/bootstrap.min.css' rel='stylesheet' />
+  <link href='public/css/style.css' rel='stylesheet' />
+  <link href='public/css/app.css' rel='stylesheet' />
+
+
+  <!-- JAVASCRIPT -->
+  <script type="text/javascript" src="public/js/vendor/angular.min.js"></script>
+  <script type="text/javascript" src="public/js/vendor/jquery-1.11.3.min.js"></script>
+  <script src='public/js/vendor/bootstrap.min.js'></script>
+  <script src='public/js/vendor\wow.min.js'></script>
+  <script src='public/js/app.js'></script>
+
+  <!-- GOOGLE ANALYTICS -->
+  <script>
+//  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//
+//  ga('create', 'UA-64448120-1', 'auto');
+//  ga('send', 'pageview');
+</script>
+
+</head>
+  <body>
+    <div class='page-wrap col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+      <!-- Fixed Header will be used on many pages-->
+      <listant-header ></listant-header>
+
+      <section id='landing' class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div class='container col-lg-12 col-md-12 col-sm-12 col-xs-12' style="margin-top: 50px;">
+          <div class='left col-lg-7 col-md-7 col-sm-12 col-xs-12'>
+            <h1>Get connected to<br> your community.</h1>
+
+            <p>Listant is a real-time, local listing agent that provides the
+                most efficient, responsive, and safe platform for the
+                everyday exchanges of goods and services.</p><br>
+
+            <button class='ios-store' href="https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8">
+                <img style='width:100%!important;'  src='public/img/lista_wicon_appplebadge_big_unac.svg' Onclick="window.open('https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8', '_blank')">
+            </button>
+
+
+          </div>
+          <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
+            <img src='public/img/lista_wpic_iphone.png' style='width:70%; float:right;'>
+          </div>
+        </div>
+      </section>
+
+      <!-- Homepage Design-->
+      <div id='search' class='col-lg-9 col-md-9 col-sm-9 col-xs-12' style="margin-top: 50px;">
+        <form role="form-horizontal col-md-9 col-xs-9">
+          <div class="form-group ">
+            <div class="form-group col-md-8 col-xs-12">
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Keyword</span>
+                <input type="text" class="form-control" id="inputKeyword" placeholder="" aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+
+            <div class="form-group col-md-4 col-xs-12" >
+              <div class="input-group">
+                <span class="input-group-addon" id="basic-addon2">Zip Code</span>
+                <input type="text" class="form-control" id="inputZipCode" placeholder="" aria-describedby="basic-addon2">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id='home-content' class='container col-lg-12 col-md-12 col-sm-12 col-xs-12' style="margin-top: 50px;">
+
+
+        <form id="home-left" class="form-horizontal col-md-3 col-xs-12" role="form">
+          <label id="postNewJobLabel" class="col-md-12 col-xs-12">Post New Job</label>
+          <div class="form-group row">
+            <label for="inputTitle" class="col-md-12 col-xs-12 control-label">Title</label>
+            <div class="col-md-12 col-xs-12">
+              <input type="text" class="form-control" id="inputTitle" placeholder="Title">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputLocation" class="col-md-12 col-xs-12 control-label">Location</label>
+            <div class="col-md-12 col-xs-12">
+              <input type="text" class="form-control" id="inputLocation" placeholder="Location">
+            </div>
+          </div>
+          <div class="form-group ">
+              <div class="form-group col-md-6 col-xs-12">
+                <label for="inputDeadline" class="col-md-12 control-label">Deadline</label>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" id="inputDeadline" placeholder="">
+                </div>
+              </div>
+              <div class="form-group col-md-6 col-xs-12" >
+                <label for="inputPrice" class="col-md-12 control-label">Price</label>
+                <div class="col-md-12">
+                  <input type="text" class="form-control" id="inputPrice" placeholder="">
+                </div>
+              </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-md-12 col-xs-12 control-label">Photos</label>
+
+          </div>
+          <button id="getPhotoBtn" type="button" class="btn btn-default col-md-12">Add Photo</button>
+          <div class="form-group row">
+            <label for="inputDescription" class="col-md-12 col-xs-12 control-label">Description</label>
+            <div class="col-md-12">
+              <textarea class="form-control" rows="5" id="inputDescription"></textarea>
+            </div>
+          </div>
+          <button id="postJobBtn" type="submit" class="btn btn-default col-md-12 col-xs-12">Post Job</button>
+        </form>
+
+        <div id="home-middle" class="col-md-6 col-xs-12">
+          <div class="applyToJob container">
+            <div class="row">
+              <label class="applyJobNameLabel col-md-12 col-xs-12">Mow My Yard</label>
+              <div class="col-md-6 col-xs-12">
+                <a href="#" class="thumbnail">
+                  <img src="public\img\examples\mowMyLawn.png" alt="...">
+                </a>
+              </div>
+              <div class="applyLabelGroup col-md-6 col-xs-12">
+                <label class="applyCategoryLabel col-md-12 col-xs-12">Category:</label>
+                <label class="applyAddressLabel col-md-12 col-xs-12">Address:</label>
+                <label class="applyDeadlineLabel col-md-12 col-xs-12">Deadline:</label>
+                <label class="applyBioLabel col-md-12 col-xs-12">Bio:</label>
+              </div>
+            </div>
+            <label class="col-md-12 col-xs-12 control-label">Comments</label>
+            <div class="col-md-12" style="margin-bottom: 15px;">
+              <textarea class="form-control" rows="5" id="jobComment-B"></textarea>
+            </div>
+            <button type="submit" class="applyJobBtn btn btn-default">Apply to Job</button>
+          </div>
+
+          <div class="applyToJob container">
+            <div class="row">
+              <label class="applyJobNameLabel col-md-12 col-xs-12">Mow My Friend's Yard</label>
+              <div class="col-md-6 col-xs-12">
+                <a href="#" class="thumbnail">
+                  <img src="public\img\examples\mowMyLawn.png" alt="...">
+                </a>
+              </div>
+              <div class="applyLabelGroup col-md-6 col-xs-12">
+                <label class="applyCategoryLabel col-md-12 col-xs-12">Category:</label>
+                <label class="applyAddressLabel col-md-12 col-xs-12">Address:</label>
+                <label class="applyDeadlineLabel col-md-12 col-xs-12">Deadline:</label>
+                <label class="applyBioLabel col-md-12 col-xs-12">Bio:</label>
+              </div>
+            </div>
+            <label class="col-md-12 col-xs-12 control-label">Comments</label>
+            <div class="col-md-12" style="margin-bottom: 15px;">
+              <textarea class="form-control" rows="5" id="jobComment"></textarea>
+            </div>
+            <button type="submit" class="applyJobBtn btn btn-default">Apply to Job</button>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+      <!--Flip Section with JS Directions for "How Listant Works"-->
+      <section id='flip' class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+        <div class='container col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+          <div class='left' id='left-info'>
+
+            <h2>Get a job done</h2>
+            <h3>Free up your busy schedule</h3>
+
+            <img src='public/img/lista_wicon_getajobdone_entirenotitle.svg'>
+          
+          </div>
+
+          <div class='middle' id='middle-guy'>
+            <div class='frame'>
+              <h2>OR, </h2> <h2 id='swap'> Get a job</h2><br>
+              <img id='try-me' src='public/img/lista_wicon_arrow_30.svg'>
+            </div>
+          </div>
+
+          <div class='right' id='right-info'>
+
+            <h2>Get a job</h2>
+            <h3>Work within your own schedule</h3>
+
+            
+            <img src='public/img/lista_wicon_getajob_entirenotitle.svg'>
+            
+          </div>
+        </div>
+      </section>
+
+        <div class='container col-lg-12 col-md-12 col-sm-12 col-xs-12' style="margin-top: 50px;">
+            <h1>Start Listing. Start Searching.</h1>
+            <button class='ios-store' href="http://www.google.com">
+                <img style='width:100%!important;'  src='public/img/lista_wicon_appplebadge_big_unac.svg' Onclick="window.open('https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8', '_blank')">
+            </button>
+        </div>
+
+        <!--Footer Section-->
+        <listant-footer></listant-footer>
+
+
+
+
+    </div>
+  </body>
+</html>

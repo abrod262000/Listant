@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="listant">
+
+<head>
+    <!-- META DATA -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="UTF-8">
+    <title>Listant | Community Driven:</title>
+    <meta name="description" content="Listant is a real-time, local listing agent that provides the most efficient, responsive, and safe platform for the everyday exchanges of goods and services."/>
+    <meta name="keywords" content="Listant is a real-time, local listing agent that provides the most efficient, responsive, and safe platform for the everyday exchanges of goods and services.."/>
+    <meta name="author" content="Listant, LLC"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="http://bellwethermade.com/small_facebook.png" />
+    <meta property="og:title" content="Listant | Community Driven:" />
+    <meta property="og:description" content="Listant is a real-time, local listing agent that provides the most efficient, responsive, and safe platform for the everyday exchanges of goods and services." />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    <!-- WEB FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- STYLESHEETS -->
+    <link href="public/css/font-awesome.min.css" rel="stylesheet">
+    <link href='public/css/bootstrap.min.css' rel='stylesheet' />
+    <!--<link href='public/css/style.css' rel='stylesheet' />-->
+    <!--<link href='public/css/app.css' rel='stylesheet' />-->
+    <!-- Custom CSS -->
+    <link href="public/css/2-col-portfolio.css" rel="stylesheet">
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="public/js/vendor/angular.min.js"></script>
+    <script type="text/javascript" src="public/js/vendor/jquery-1.11.3.min.js"></script>
+    <script src='public/js/vendor/bootstrap.min.js'></script>
+    <script src='public/js/vendor\wow.min.js'></script>
+    <script src='public/js/app.js'></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- GOOGLE ANALYTICS -->
+    <!--<script>-->
+          <!--(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+          <!--(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+          <!--m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+          <!--})(window,document,'script','//www.google-analytics.com/analytics.js','ga');-->
+        <!-- -->
+          <!--ga('create', 'UA-64448120-1', 'auto');-->
+          <!--ga('send', 'pageview');-->
+
+          <!--ga('send', 'pageview');-->
+    <!--</script>-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <listant-header ></listant-header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Nearby Listings - Page Header -->
+        <div class="row">
+            <div class="page-header col-xs-12">
+                <h1 id="nearbyListingsHeader" class="col-sm-6 col-xs-12">Nearby Listings</h1>
+                <h1 class="col-sm-6 col-xs-12"><small>52240 <a href="#" style="font-size: small; margin-left: 20px;">Change Zip Code</a></small></h1>
+            </div>
+        </div>
+
+        <!-- Search Nearby Listings Filtering Options-->
+        <div class="row">
+            <div id='search' class='col-lg-9 col-md-9 col-sm-9 col-xs-12'>
+                <!-- Keyword Filtering for Nearby Listings-->
+                <div class="form-group col-md-9 col-xs-12">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Keyword</span>
+                        <input type="text" class="form-control" id="inputKeyword" placeholder="" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+                <!-- Filter Listings Button Group-->
+                <div class="form-group col-md-3 col-xs-12" >
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">Filter Listings</span>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-describedby="basic-addon3" aria-haspopup="true" aria-expanded="false">
+                                All Listings  <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">All Listings</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Delivery</a></li>
+                                <li><a href="#">Home Improvement</a></li>
+                                <li><a href="#">Pet Services</a></li>
+                                <li><a href="#">Cleaning Services</a></li>
+                                <li><a href="#">Yardwork</a></li>
+                                <li><a href="#">University</a></li>
+                                <li><a href="#">Laundry</a></li>
+                                <li><a href="#">Auto Services</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="applyToJob col-md-5 portfolio-item">
+                <div class="row">
+                    <div class="img-user-face col-sm-3 col-xs-5">
+                        <img src="public\img\examples\example_man.png" class="img-circle">
+                    </div>
+                    <div class="nameAndStarRatingListings col-sm-9 col-xs-7">
+                        <label class="col-xs-12">John Smith</label>
+                        <div class="stars">
+                            <form action="">
+                                <input class="star star-5" id="star-5-A" type="radio" name="star"/>
+                                <label class="star star-5" for="star-5-A"></label>
+                                <input class="star star-4" id="star-4-A" type="radio" name="star"/>
+                                <label class="star star-4" for="star-4-A"></label>
+                                <input class="star star-3" id="star-3-A" type="radio" name="star"/>
+                                <label class="star star-3" for="star-3-A"></label>
+                                <input class="star star-2" id="star-2-A" type="radio" name="star"/>
+                                <label class="star star-2" for="star-2-A"></label>
+                                <input class="star star-1" id="star-1-A" type="radio" name="star"/>
+                                <label class="star star-1" for="star-1-A"></label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <label class="applyJobNameLabel col-md-12 col-xs-12 text-center">Mow My Yard</label>
+                <div class="row">
+                    <div class="img-job col-md-6 col-sm-6 col-xs-12">
+                        <img class="img-responsive center-block nearbyListingJobImg" src="public\img\examples\mowMyLawn.png" alt="">
+                    </div>
+                    <div class="applyLabelGroup col-md-6 col-sm-6 col-xs-12">
+                        <div class="row ">
+                            <label class="input-group-addon applyLabel col-xs-12">Category:</label>
+                            <label class="applyAnswer col-xs-12">Yardwork</label>
+                        </div>
+                        <div class="row ">
+                            <label class="input-group-addon applyLabel col-xs-12">Address:</label>
+                            <label class="applyAnswer col-xs-12">311 N. Van Buren St, Iowa City, IA</label>
+                        </div>
+                        <div class="row ">
+                            <label class="input-group-addon applyLabel col-xs-12">Deadline:</label>
+                            <label class="applyAnswer col-xs-12">Sunday, September 26th, 2015</label>
+                        </div>
+                        <div class="row ">
+                            <label class="input-group-addon applyLabel col-xs-12">Bio:</label>
+                            <label class="applyAnswer col-xs-12">University of Iowa Student</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row applyDescription">
+                    <label class="input-group-addon applyLabel col-xs-12">Description:</label>
+                    <label class="applyAnswer col-xs-12">
+                        My landlord said my lawn has to be mowed by the 26th or I'll be fined!
+                    </label>
+                </div>
+                <div class="col-md-12" style="margin-bottom: 15px;">
+                    <button type="submit" class="applyJobBtn btn btn-default center-block">Apply to Job</button>
+                </div>
+            </div>
+
+            <div class="applyToJob col-md-5 col-md-offset-1 portfolio-item">
+                <div class="row">
+                    <div class="img-user-face col-sm-3 col-xs-5">
+                        <img src="public\img\examples\example_girl.png" class="img-circle">
+                    </div>
+                    <div class="nameAndStarRatingListings col-sm-9 col-xs-7">
+                        <label class="col-xs-12">Melissa Adamopolous</label>
+                        <div class="stars">
+                            <form action="">
+                                <input class="star star-5" id="star-5-B" type="radio" name="star"/>
+                                <label class="star star-5" for="star-5-B"></label>
+                                <input class="star star-4" id="star-4-B" type="radio" name="star"/>
+                                <label class="star star-4" for="star-4-B"></label>
+                                <input class="star star-3" id="star-3-B" type="radio" name="star"/>
+                                <label class="star star-3" for="star-3-B"></label>
+                                <input class="star star-2" id="star-2-B" type="radio" name="star"/>
+                                <label class="star star-2" for="star-2-B"></label>
+                                <input class="star star-1" id="star-1-B" type="radio" name="star"/>
+                                <label class="star star-1" for="star-1-B"></label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <label class="applyJobNameLabel col-md-12 col-xs-12 text-center">Clean My Room</label>
+                <div class="row">
+                    <div class="img-job col-md-6 col-sm-6 col-xs-12">
+                        <img class="img-responsive center-block nearbyListingJobImg" src="public\img\examples\cleanMyRoom.png" alt="">
+                    </div>
+                    <div class="applyLabelGroup col-md-6 col-sm-6 col-xs-12">
+                        <div class="row ">
+                            <label class="input-group-addon applyLabel col-xs-12">Category:</label>
+                            <label class="applyAnswer col-xs-12">Cleaning Services</label>
+                        </div>
+                        <div class="row ">
+                            <label class="input-group-addon applyLabel col-xs-12">Address:</label>
+                            <label class="applyAnswer col-xs-12">151 Madison St, Iowa City, IA</label>
+                        </div>
+                        <div class="row ">
+                            <label class="input-group-addon applyLabel col-xs-12">Deadline:</label>
+                            <label class="applyAnswer col-xs-12">Monday, September 27th, 2015</label>
+                        </div>
+                        <div class="row ">
+                            <label class="input-group-addon applyLabel col-xs-12">Bio:</label>
+                            <label class="applyAnswer col-xs-12">Artist and Kirkwood Student.</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row applyDescription">
+                    <label class="input-group-addon applyLabel col-xs-12">Description:</label>
+                    <label class="applyAnswer col-xs-12">
+                        Please clean my room! It's a mess and I don't have time this week with finals right around the corner.
+                    </label>
+                </div>
+                <div class="col-md-12" style="margin-bottom: 15px;">
+                    <button type="submit" class="applyJobBtn btn btn-default center-block">Apply to Job</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Three</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Four</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Five</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+            <div class="col-md-6 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                </a>
+                <h3>
+                    <a href="#">Project Six</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Listant 2015</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+
+
+</body>
+
+</html>
