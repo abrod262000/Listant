@@ -68,17 +68,6 @@ $(document).ready(function() {
 
 
 
-
-
-  //app.controller('ListantController', ['$http', function($http) {
-  //  var store = this;
-  //  store.products = [];
-  //
-  //  this.products = $http.get('store-products.json').success(function(data) {
-  //    store.products = data;
-  //  });
-  //}]);
-
   app.directive('listantHeader', function() {
     return {
       restrict: 'E',
@@ -86,12 +75,7 @@ $(document).ready(function() {
     };
   });
 
-  app.directive('termsAndConditions', function() {
-    return {
-      restrict: 'E',
-      templateUrl: 'public/html/terms-and-conditions.html'
-    };
-  });
+
 
   app.directive('listantFooter', function() {
     return {
@@ -99,6 +83,7 @@ $(document).ready(function() {
       templateUrl: 'public/html/listant-footer.html'
     };
   });
+
 
   //app.controller('ReviewController', function(){
   //  this.review = {};
@@ -123,14 +108,6 @@ $(document).ready(function() {
   //  this.setTab = function (setTab) {
   //    this.tab = setTab;
   //  }
-  //});
-
-  //app.controller('GalleryController', function(){
-  //  this.current = 0;
-  //
-  //  this.setCurrent = function(setCurrent) {
-  //    this.current = setCurrent || 0;
-  //  };
   //});
 
 })();

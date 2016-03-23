@@ -124,25 +124,25 @@
 	}
 
 	.ios-store{
-		background: #0160BA;
-		border:2px solid #0160ba;
+		background: none;
+		border:none;
 		height:76px;
 		text-align: center;
 		width:254px;
 		border-radius: 5px;
 		transition: all .3s ease-in;
+		margin-top: 10px;
 	}
 
 	.ios-store:hover{
-		border:2px solid #21A0FF;
 		transition: all .3s ease-in;
 	}
 
 	.ios-store img{
 		width: 100%!important;
+		height: 100% !important;
 		margin: 0;
 	}
-
 
 	.icon-frame{
 		width:40px;
