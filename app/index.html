@@ -23,42 +23,108 @@
   <link href='public/css/bootstrap.min.css' rel='stylesheet' />
   <link href='public/css/style.css' rel='stylesheet' />
 
-  <!-- Custom CSS -->
-  <link href="public/css/clean-blog.css" rel="stylesheet">
-
 </head>
   <body>
     <br class='page-wrap col-lg-12 col-md-12 col-sm-12 col-xs-12'>
       <!-- Fixed Header will be used on many pages-->
-      <listant-header ></listant-header>
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <a class="navbar-brand" href="index.html">
+            <img alt="Brand" width="150" height="20" src="public/img/listant_wicon_logo_nav.svg">
+          </a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="contact.html">About</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="site-heading">
+              <h1>Connecting Your Community</h1>
+              <hr class="small">
+              <span class="subheading">Don't stress over your endless list of chores, Just Listant!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
       <section id='landing' class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-        <div class='container col-lg-12 col-md-12 col-sm-12 col-xs-12' style="margin-top: 50px;">
+        <div class='container get-work-done col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+          <div class='left col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+            <img src='public/img/Get-Work-Done.png' style='width:100%; float:right;'>
+          </div>
+          <div class='work-numbered-list col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+            <h1>Get Work Done</h1>
+            <ol>
+              <li>Sign in to Listant and post a job</li>
+              <li>Connect with top applicants in your local community</li>
+              <li>Pay & review the worker as soon as your job is complete</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class='container get-work col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+          <div class='work-numbered-list col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+            <h1>Get Work</h1>
+            <ol>
+              <li>Browse open jobs in your local community</li>
+              <li>Apply to jobs that fit your skill set and availability</li>
+              <li>Connect, communicate, and cashout all on one platform</li>
+            </ol>
+          </div>
+          <div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>
+            <img src='public/img/Get-Work.png' style='width:100%; float:right;'>
+          </div>
+
+        </div>
+
+        <!--<div class='container col-lg-12 col-md-12 col-sm-12 col-xs-12' style="margin-top: 50px;">
           <div class='left col-lg-7 col-md-7 col-sm-12 col-xs-12'>
             <h1>Get connected to<br> your community.</h1>
 
             <p>Listant is a real-time, local listing agent that provides the
                 most efficient, responsive, and safe platform for the
                 everyday exchanges of goods and services.</p><br>
-
-            <button class='ios-store' href="https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8">
-              <img style='width:100%!important;'  src='public/img/apple_store-badge.png' Onclick="window.open('https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8', '_blank')">
-            </button>
-
-            <button class='ios-store' href="https://play.google.com/store/apps/details?id=bellwethermade.Lista">
-              <img style='width:100%!important;'  src='public/img/google-play-badge.png' Onclick="window.open('https://play.google.com/store/apps/details?id=bellwethermade.Lista', '_blank')">
-            </button>
-
-
           </div>
           <div class='col-lg-5 col-md-5 col-sm-12 col-xs-12'>
             <img src='public/img/lista_wpic_iphone.png' style='width:70%; float:right;'>
           </div>
-        </div>
+        </div>-->
+
+
       </section>
 
       <!--Flip Section with JS Directions for "How Listant Works"-->
-      <section id='flip' class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+      <!--<section id='flip' class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
         <div class='container col-lg-12 col-md-12 col-sm-12 col-xs-12'>
           <div class='left' id='left-info'>
 
@@ -87,15 +153,32 @@
           </div>
         </div>
       </section>
-
+-->
         <div class='container col-lg-12 col-md-12 col-sm-12 col-xs-12' style="margin-top: 50px;">
             <h1>Start Listing. Start Searching.</h1>
-            <button class='ios-store' href="http://www.google.com">
+<!--            <button class='ios-store' href="http://www.google.com">
                 <img style='width:100%!important;'  src='public/img/lista_wicon_appplebadge_big_unac.svg' Onclick="window.open('https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8', '_blank')">
-            </button>
+            </button>-->
+
+          <button class='ios-store' href="https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8">
+            <img style='width:100%!important;'  src='public/img/apple_store-badge.png' Onclick="window.open('https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8', '_blank')">
+          </button>
+
+          <button class='ios-store' href="https://play.google.com/store/apps/details?id=bellwethermade.Lista">
+            <img style='width:100%!important;'  src='public/img/google-play-badge.png' Onclick="window.open('https://play.google.com/store/apps/details?id=bellwethermade.Lista', '_blank')">
+          </button>
         </div>
 
 
+<!--    <div class='container col-lg-12 col-md-12 col-sm-12 col-xs-12' style="margin-top: 50px;">
+      <button class='ios-store' href="https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8">
+        <img style='width:100%!important;'  src='public/img/apple_store-badge.png' Onclick="window.open('https://itunes.apple.com/us/app/listant-local-marketplace/id1008869837?mt=8', '_blank')">
+      </button>
+
+      <button class='ios-store' href="https://play.google.com/store/apps/details?id=bellwethermade.Lista">
+        <img style='width:100%!important;'  src='public/img/google-play-badge.png' Onclick="window.open('https://play.google.com/store/apps/details?id=bellwethermade.Lista', '_blank')">
+      </button>
+    </div>-->
         <!--Footer Section-->
         <listant-footer></listant-footer>
 
