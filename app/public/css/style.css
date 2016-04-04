@@ -46,7 +46,9 @@
 		font-style: normal;
 	}
 
-
+	.text-center {
+		text-align: center !important;
+	}
 	h1{
 		color:#0160BA;
 		font-family: 'gotham-reg';
@@ -100,21 +102,27 @@
 		width: 100%;
 		z-index: 3;
 		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		background-color: rgba(248, 248, 248, 0.80);
+		border-bottom: 1px solid transparent;
 	}
 	.navbar-custom .navbar-brand {
-		font-weight: 800;
+		padding: 10px;
 	}
+
+	.navbar-custom .navbar-brand img {
+		width: 150px;
+		height: 30px;
+	}
+
 	.navbar-custom .nav li a {
 		text-transform: uppercase;
 		font-size: 12px;
 		font-weight: 800;
+		color: #0160BA;
 		letter-spacing: 1px;
 	}
 	@media only screen and (min-width: 768px) {
-		.navbar-custom {
-			background-color: rgba(248, 248, 248, 0.80);
-			border-bottom: 1px solid transparent;
-		}
+
 		.navbar-custom .navbar-brand {
 			color: #0160BA;
 			padding: 20px;
@@ -184,7 +192,7 @@
 	Landing Page Header
 	*/
 	.intro-header {
-		background: #808080 url('../img/Landing-LargeMonitor.jpg') no-repeat scroll;
+		background: #808080 url('../img/Landing_LargeMonitor.png') no-repeat scroll;
 		-webkit-background-size: 100% 100%;
 		-moz-background-size: 100% 100%;
 		-o-background-size: 100% 100%;
@@ -193,11 +201,16 @@
 		background-size: 100% 100%; /* to specify dimensions explicitly */
 	}
 
+	.intro-header .container {
+		background-color: rgba(255, 255, 255, 0.20);
+	}
+
 	.intro-header .site-heading {
-		padding-top: 150px;
+		padding-top: 30px;
 		padding-right: 0;
 		padding-left: 0;
 		padding-bottom: 20px;
+		margin-top: 20px;
 	}
 
 	.intro-header .site-heading,
@@ -224,6 +237,13 @@
 	}
 
 	@media only screen and (min-width: 768px) {
+		.intro-header .site-heading {
+			padding-top: 100px;
+			padding-right: 0;
+			padding-left: 0;
+			padding-bottom: 20px;
+		}
+
 		.intro-header .site-heading h1,
 		.intro-header .page-heading h1 {
 			font-size: 65px;
@@ -235,6 +255,15 @@
 		}
 	}
 
+	@media only screen and (min-width: 1170px) {
+		.intro-header .site-heading {
+			padding-top: 150px;
+			padding-right: 0;
+			padding-left: 0;
+			padding-bottom: 40px;
+		}
+
+	}
 	/*
 	BLOG POST HEADING SPECIFIC
 	*/
@@ -290,6 +319,9 @@
 	/*
 	Landing Page Specific Details
 	*/
+	#landing {
+		border-top: 2px solid #0160BA;
+	}
 	#landing .container{
 		padding:0;
 		width: 100%;
@@ -301,38 +333,28 @@
 		line-height: 1;
 	}
 
-	#landing .container.get-work-done {
-		background-color: #0160BA;
+	#landing .get-work {
+		background-color:  rgba(0, 131, 255, 0.18);
 	}
 
-	#landing .container.get-work {
-		background-color: rgba(1, 96, 186, 0.27);;
-	}
-
-	#landing .get-work-done h1{
-		color: white;
+	#landing .get-work img {
+		width:100%;
+		max-width: 600px;
+		max-height: 400px;
 	}
 
 	#landing .get-work h1{
 		color: #0160BA;
 	}
 
-
-	#landing .left{
-		text-align: left;
+	#landing .get-work li{
+		color: #0160BA;
 	}
 
-	#landing .work-numbered-list {
+	#landing .get-work .work-numbered-list {
 		padding-top: 0px;
 		padding-bottom: 20px;
 	}
-
-	@media only screen and (min-width: 768px) {
-		#landing .work-numbered-list {
-			padding-top: 130px;
-		}
-	}
-
 
 	#landing ol {
 		padding-left: 10px;
@@ -343,22 +365,9 @@
 		font-family: 'gotham-reg';
 	}
 
-	#landing .get-work-done li{
-		color: white;
-	}
-
-	#landing .get-work li{
-		color: #0160BA;
-	}
-
-	#landing .right{
-		text-align: right;
-	}
-
 	.top{
 		text-align: right;
 		padding-bottom: 10px;
-
 	}
 
 	#landing .top a{
@@ -417,6 +426,39 @@
 	}
 
 
+
+	/*
+	Contact Page
+	*/
+	#contact {
+		margin-top: 60px;
+		padding: 10px;
+	}
+
+	#contact {
+		margin-top: 60px;
+		padding: 10px;
+	}
+
+	#contact .map {
+		min-width: 300px;
+		min-height: 300px;
+		width: 100%;
+		height: 100%;
+	}
+
+	#contact .header {
+		background-color: #F5F5F5;
+		color: #36A0FF;
+		height: 70px;
+		font-size: 27px;
+		padding: 10px;
+	}
+
+
+	/*
+
+	*/
 
 	#flip .container{
 		background:#0160BA;
@@ -548,7 +590,6 @@
 	/*height: 80px;*/
 	padding-bottom: 15px;
 	text-align: left;
-	margin-top: 25px;
 	/*border-bottom:1px solid #ccc;*/
 }
 
@@ -771,24 +812,7 @@ form .four{
 
 
 
-@media only screen and (min-width: 1700px){
-	#flip .container img{
-		width:21%!important;
-	}
-}
 
-@media only screen and (min-width: 1600px){
-	#flip .container img{
-		width:31%!important;
-	}
-}
-
-@media only screen and (min-width: 1400px){
-	#flip .container img{
-		width:41%;
-	}
-
-}
 
 @media only screen and (max-width: 1048px){
 
