@@ -91,6 +91,31 @@
 		width: 100%;
 		padding:0;
 	}
+
+	.colored-line-right {
+		float: right;
+		z-index: 1;
+		display: block;
+		width: 250px;
+		height: 1px;
+		background-color: #0160BA;
+	}
+
+	.colored-line-left {
+		float: left;
+		z-index: 1;
+		display: block;
+		width: 250px;
+		height: 1px;
+		background-color: #0160BA;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.colored-line-left,
+		.colored-line-right{
+			display: none;
+		}
+	}
 	/*
 	Landing Page Header
 	*/
@@ -105,9 +130,14 @@
 	}
 
 	.intro-header .container {
-		background-color: rgba(255, 255, 255, 0.20);
+		background-color: rgba(255, 255, 255, 0.30);
 	}
 
+	@media only screen and (max-width: 500px) {
+		.intro-header .container {
+			background-color: rgba(255, 255, 255, 0.60);
+		}
+	}
 	.intro-header .site-heading {
 		padding-top: 30px;
 		padding-right: 0;
@@ -222,9 +252,9 @@
 	/*
 	Landing Page Specific Details
 	*/
-	#landing {
+/*	#landing {
 		border-top: 2px solid #0160BA;
-	}
+	}*/
 	#landing .container{
 		padding:0;
 		width: 100%;
@@ -237,7 +267,9 @@
 	}
 
 	#landing .get-work {
-		background-color:  rgba(0, 131, 255, 0.18);
+		padding: 0px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	#landing .get-work img {
@@ -254,18 +286,51 @@
 		color: #0160BA;
 	}
 
+	#landing .get-work .image-container {
+		text-align: center;
+	}
+
 	#landing .get-work .work-numbered-list {
 		padding-top: 0px;
 		padding-bottom: 20px;
+		margin-top: 0px;
+		text-align: center;
 	}
 
 	#landing ol {
 		padding-left: 10px;
+		margin-top: 25px;
 	}
 	#landing li{
-		text-align: center;
+		/*text-align: center;*/
 		list-style-position: inside;
 		font-family: 'gotham-reg';
+	}
+
+	@media only screen and (min-width: 768px) {
+
+		#landing .get-work {
+			padding: 20px;
+		}
+
+		#landing .get-work .work-numbered-list {
+			margin-top: 60px;
+		}
+
+		.get-work-top .image-container {
+			text-align: right !important;
+		}
+
+		.get-work-top .work-numbered-list {
+			text-align: left !important;
+		}
+
+		.get-work-bottom .image-container {
+			text-align: left !important;
+		}
+		.get-work-bottom .work-numbered-list {
+			text-align: right !important;
+		}
 	}
 
 	.top{
@@ -680,6 +745,7 @@ form .four{
 
 
 
+    /*
 	footer{
 		padding:0!important;
 	}
@@ -687,10 +753,6 @@ form .four{
 	footer .container{
 		text-align: center; padding:10px 100px 100px 100px; position: relative;
 	}
-
-	/*footer .container h1{*/
-		/*margin-bottom: 55px;*/
-	/*}*/
 
 	footer .container .sub{
 		position: absolute; bottom:0; background:#D9D9D9; left:0; right:0; height: 55px; line-height: 55px;
@@ -713,6 +775,7 @@ form .four{
 		color:#23527c;
 	}
 
+    */
 
 
 

@@ -8,7 +8,7 @@
 		width: 100%;
 		z-index: 3;
 		font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-		background-color: rgba(248, 248, 248, 0.80);
+		background-color: #F8F8F8;
 		border-bottom: 1px solid transparent;
 	}
 	.navbar-custom .navbar-brand {
@@ -28,6 +28,10 @@
 		letter-spacing: 1px;
 	}
 	@media only screen and (min-width: 768px) {
+
+		.navbar-custom {
+			background-color: rgba(248, 248, 248, 0.80);
+		}
 
 		.navbar-custom .navbar-brand {
 			color: #0160BA;
