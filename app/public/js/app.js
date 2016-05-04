@@ -1,38 +1,6 @@
 $(document).ready(function() {
 
-  $('#try-me').on("click", function(){
-    $("#middle-guy").toggleClass('active');
-    $("#right-info").toggleClass('active');
-    $("#left-info").toggleClass('active');
-    $("#try-me").toggleClass('active');
-    $("#swap").toggleClass('active');
-    $("#swap").text("Get a Job Done");
-    /*$('#swap').text( $(this).text("geg") );*/
-  });
 
-
-  $('#trigger').on("click", function(){
-    $('#terms').show('slower');
-    $('body,html').toggleClass('active');
-  });
-
-  $('#closer').on("click", function(){
-    $('#terms').hide('slower');
-    $('body,html').toggleClass('active');
-  });
-
-  //Sizing Job Image to Be Same as Labels
-  var nearbyListingJobImg = $('.nearbyListingJobImg'),
-      applyLabelGroups = $('.applyLabelGroup');
-
-  resizeDiv();
-
-  function resizeDiv () {
-    var setImageHeight = applyLabelGroups.height();
-    if (setImageHeight != undefined) {
-      nearbyListingJobImg.height(setImageHeight);
-    }
-  }
 
 });
 
@@ -64,18 +32,12 @@ $(document).ready(function() {
   // Initialize WOW.js Scrolling Animations
   new WOW().init();
 
-
-
-
-
   app.directive('listantHeader', function() {
     return {
       restrict: 'E',
       templateUrl: 'public/html/listant-header.html'
     };
   });
-
-
 
   app.directive('listantFooter', function() {
     return {
@@ -84,30 +46,5 @@ $(document).ready(function() {
     };
   });
 
-
-  //app.controller('ReviewController', function(){
-  //  this.review = {};
-  //
-  //  this.addReview = function(product) {
-  //    this.review.createdOn = Date.now()
-  //    product.reviews.push(this.review);
-  //
-  //    //Clear the Review
-  //    this.review = {};
-  //  };
-  //
-  //});
-
-  //app.controller('TabController', function() {
-  //  this.tab = 1;
-  //
-  //  this.isSet = function (checkTab) {
-  //    return this.tab === checkTab;
-  //  };
-  //
-  //  this.setTab = function (setTab) {
-  //    this.tab = setTab;
-  //  }
-  //});
 
 })();

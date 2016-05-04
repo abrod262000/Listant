@@ -627,23 +627,6 @@
 	background-size: 70%;
 }
 
-
-form .one{
-	background: url('../img/lista_wicon_contact_name.svg')center center no-repeat;
-}
-
-form .two{
-	background: url('../img/lista_wicon_contact_email.svg')center center no-repeat;
-}
-
-form .three{
-	background: url('../img/lista_wicon_contact_phone.svg')center center no-repeat;
-}
-
-form .four{
-	background: url('../img/lista_wicon_contact_message.svg')center center no-repeat;
-}
-
 ::-webkit-input-placeholder {
    color: #ccc;
 }
