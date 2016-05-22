@@ -4,10 +4,7 @@ Listant provides the community connections for those who are looking to outsourc
 
 ## Contact
 
-For more information on AngularJS please check out http://angularjs.org/
-
 [git]: http://git-scm.com/
-[bower]: http://bower.io
 [npm]: https://www.npmjs.org/
 [node]: http://nodejs.org
 [protractor]: https://github.com/angular/protractor
