@@ -36,43 +36,48 @@
 <body>
     <br class='page-wrap col-lg-12 col-md-12 col-sm-12 col-xs-12'>
     <!-- Fixed Header will be used on many pages-->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">
-                    <img alt="Brand" src="public/img/listant_wicon_logo_nav.svg">
-                </a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+    <!--<div class="navbar-custom-container">-->
+        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="Brand" src="public/img/listant_wicon_logo_nav.svg">
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#how-it-works">How It Works</a>
-                    </li>
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#how-it-works">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="#popular-jobs">Popular Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+            <!-- /.container -->
+        </nav>
+    <!--</div> &lt;!&ndash; /.navbar-custom-container &ndash;&gt;-->
 
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
@@ -90,15 +95,16 @@
         </div>
     </header>
 
-    <section id='landing' class='row'>
+    <section id='how-it-works' class='row landing'>
+
         <!--GET WORK DONE Row-->
-        <div id="how-it-works" class='get-work get-work-top row'>
+        <div class='get-work get-work-top row'>
             <div id="get-work-done-image" class="scroll-animation slide-right image-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <img src='public/img/Get-Work-Done.png'>
             </div>
             <div id="get-work-done-list" class='scroll-animation slide-left work-numbered-list col-lg-6 col-md-6 col-sm-12 col-xs-12'>
                 <h1>Get Work Done</h1>
-                <div class="colored-line-left"></div>
+                <div class="colored-line left"></div>
                 <ol>
                     <li>Sign in to Listant and post a job</li>
                     <li>Connect with top applicants in your local community</li>
@@ -111,7 +117,7 @@
         <div class='get-work get-work-bottom row'>
             <div id="get-work-list" class='scroll-animation slide-right work-numbered-list col-lg-6 col-md-6 col-sm-12 col-xs-12'>
                 <h1>Get Work</h1>
-                <div class="colored-line-right"></div>
+                <div class="colored-line right"></div>
                 <ol>
                     <li>Browse open jobs in your local community</li>
                     <li>Apply to jobs that fit your skill set and availability</li>
@@ -121,6 +127,170 @@
             <div id="get-work-image" class="scroll-animation slide-left image-container col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <img src='public/img/Get-Work.png'>
             </div>
+        </div>
+
+    </section>
+
+    <section id='popular-jobs' class='landing'>
+
+        <h1 style="color:white;">Popular Jobs</h1>
+        <div class="colored-line center" style="background-color:white;"></div>
+
+        <div class="row squares-container">
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/CleaningServices.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Cleaning</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/Delivery.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Delivery</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/EventHelp.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Event Help</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/HomeImprovement.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Home Improvement</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/Laundry.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Laundry</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/Moving.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Moving</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/Petservices.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Pet Services</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/Technology.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Web Services</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/University.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Educational</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/Yardwork.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Yardwork</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="picture-square">
+                    <div class="circle-img-container">
+                        <div class="circle-img">
+                            <img src="https://s3-us-west-1.amazonaws.com/www.listantlocal.com/img/jobs/AutoServices.jpeg"/>
+                        </div>
+                    </div>
+                    <div class="job-title text-center">
+                        <h3><strong>Auto</strong></h3>
+                    </div>
+                    <div class="square-background"></div>
+                </div>
+            </a>
         </div>
 
 
