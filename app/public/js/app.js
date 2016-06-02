@@ -7,6 +7,13 @@ $(document).ready(function () {
         var windowHeight = $window.height();
         var windowTopPosition = $window.scrollTop();
         var windowBottomPosition = (windowTopPosition + windowHeight);
+        
+        // Make sure to show the navigation menu if we're at the top
+        if(windowTopPosition === 0) {
+            $('.navbar-custom').addClass('active');
+        } else {
+            $('.navbar-custom').removeClass('active');
+        }
 
         $.each($animationElements, function () {
             var $element = $(this);
